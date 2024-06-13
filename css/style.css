@@ -239,10 +239,9 @@ header .hd{
 }
 
 .atm1{
-  width: 30rem;
   margin-top: 9rem;
   display: inline-block;
-  margin-left: 6rem;
+  margin-left: 9rem;
   opacity: 0;
 }
 
@@ -268,12 +267,6 @@ header .hd{
   border-radius: 2.5rem;
 }
 
-.atm1 img{
-  width: 25rem;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2rem;
-}
 
 /* 서비스 */
 
