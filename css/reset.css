@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+/* Icon Font CDN */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+/* font-family: 'Material Symbols Outlined'; */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+/* font-family: fontawesome; */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css'); 
+/* font-family: xeicon;  */
+
+*{ /* 전체선택자(모든 태그에 여백을 빼줌 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow-x: hidden;
+}
+img{
+  max-width: 100%;
+}
+
+li{list-style-type: none;} /* 목록에 점 없애기 */
+a{
+  text-decoration:none; /* 하이퍼링크 밑줄 없애기 */
+  color: inherit; /* 하이퍼링크의 글자색 부모한테 상속받기 */
+}
+article,aside,details,summary,figcaption,figure,
+footer,header,hgroup,main,nav,section{
+  display: block;
+}
+
+/* 
+h1{
+  font-size:3.5rem;
+}
+
+검사도구(computed)에서 보면 20px로 나오는 것을 확인할 수 있다.
+62.5%로 하게 되면 html의 기본폰트 사이즈는 16px인데 더 작게 10px로 되기 때문에 계산하기가 편하다.
+rem단위를 쓰게 되면 root폴더에서 딱 한번만 전달이 되기 때문에 rem에 10을 곱한 결과가 된다.
+
+만약에 35px로 할거다 그러면 3.5rem을 입력하면 된다.
+*/
