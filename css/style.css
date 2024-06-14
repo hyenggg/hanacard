@@ -109,7 +109,6 @@ header .hd{
   top: 50%;
 }
 .mOpen .mob_btn span:nth-child(2){
-  transform: rotate(100%);
   opacity: 0;
 }
 .mOpen .mob_btn span:nth-child(3){
@@ -153,8 +152,6 @@ header .hd{
 .introduce{
   padding: 3rem;
   padding-top: 6rem;
-  font-weight: 400;
-  font-size: 2.4rem;
   position: relative;
 }
 
@@ -169,9 +166,15 @@ header .hd{
   opacity: 0;
 }
 
+.in_txt h2{
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
 .img_wrap img{transform: scale(1);}
 
-.in_txt p::after{
+.in_txt h2::after{
   display: inline-block;
   content: '';
   background: url(../image/arrow.png) no-repeat center;
@@ -403,8 +406,6 @@ header .hd{
 .card_one{
   padding: 3rem;
   padding-top: 6rem;
-  font-weight: 500;
-  font-size: 2.4rem;
   opacity: 0;
   height: 85rem;
 }
@@ -412,6 +413,11 @@ header .hd{
 .arrow2{
   margin: 1rem 0;
   animation: arrow-ani 1.5s infinite;
+}
+
+.one_txt h2{
+  font-weight: 500;
+  font-size: 2.6rem;
 }
 
 .one_txt b{
