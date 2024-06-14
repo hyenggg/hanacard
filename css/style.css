@@ -168,10 +168,6 @@ header .hd{
   margin-top: 3rem;
   opacity: 0;
 }
-.img_wrap{
-  margin-top: 3rem;
-  opacity: 0;
-}
 
 .img_wrap img{transform: scale(1);}
 
@@ -201,27 +197,11 @@ header .hd{
 }
 
 .img_wrap{
-  position: relative;
-  width: 42rem;
-  height: 45rem;
+  margin-top: 6rem;
+  opacity: 0;
 }
 
-.deco1{
-  position: absolute;
-  top: 35rem;
-}
-.deco2{
-  position: absolute;
-  top: 6.5em;
-  left: 4rem;
-}
-.deco3{
-  position: absolute;
-  transform: rotate(90deg);
-  width: 32rem;
-  top: 12rem;
-  left: 11rem;
-}
+.deco img{margin: 0 auto;}
 
 /* 주요혜택 */
 
@@ -238,10 +218,16 @@ header .hd{
   font-size: 2.9rem;
 }
 
+.atm_all{
+  width: 24rem;
+  margin: 0 auto;
+}
+
+
 .atm1{
   margin-top: 9rem;
+  justify-content: center;
   display: inline-block;
-  margin-left: 9rem;
   opacity: 0;
 }
 
@@ -270,10 +256,12 @@ header .hd{
 
 /* 서비스 */
 
+#service{
+  margin-top: 3rem;
+}
+
 .point{
   padding: 3rem;
-  padding-top: 6rem;
-  height: 154rem;
   opacity: 0;
 }
 
@@ -282,7 +270,6 @@ header .hd{
   font-weight: 400;
   font-size: 2.7rem;
   margin-bottom: 4rem;
-  margin-top: 3rem;
 }
 
 .point span{
@@ -349,10 +336,15 @@ header .hd{
 }
 
 /* 카드디자인 */
+
+
+#design{
+  margin-top: -3rem;
+}
+
 .design_all{
   padding: 3rem;
   padding-top: 6rem;
-  height: 112rem;
   background-color: #7A4BFF;
 }
 
@@ -380,25 +372,23 @@ header .hd{
   font-weight: 500;
 }
 
-.card_d{
-  height: 80rem;
-}
+.card_d{overflow: hidden;}
 
 .card_d img{
-  width: 20rem;
-  transform: translateX(6rem) rotate(-90deg);
+  transform: translateX(2rem) rotate(-90deg);
   transition: 0.4s;
 }
 
 .d1, .d2, .d3{opacity: 0;}
 
 .d2 img{
-  transform: translateX(-6rem) rotate(90deg);
+  transform: translateX(-2rem) rotate(90deg);
   margin-top: -5rem;
+  padding-left: 1rem;
 }
 
 .d1, .d3 img{
-  margin-left: 20rem;
+  margin-left: 18.7rem;
 }
 
 .d3 img{margin-top: -5rem;}

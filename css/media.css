@@ -29,7 +29,7 @@
     width: 100%;
   }
 
-  .img_wrap img{transform: scale(1.2);}
+  .img_wrap img{transform: scale(1.1);}
 
   /* 주요혜택 */
 
@@ -50,6 +50,7 @@
     justify-content: center;
     transform: translateX(0.5rem);
     margin-top: 2rem;
+    width: 100rem;
   }
 
   .atm1{
@@ -237,18 +238,7 @@
     width: 45rem;
   }
 
-  .img_wrap img{transform: scale(1.2);}
-
-  .deco2{
-    top:18rem;
-    left: 4rem;
-    width: 10rem;
-  }
-
-  .deco3{
-    left: 14rem;
-    margin-top: -2.2rem;
-  }
+  .deco img{transform:scale(1);}
 
   .in_txt p::after{
     top: 31.5rem;
@@ -277,11 +267,12 @@
     justify-content: center;
     transform: translateX(0.5rem);
     margin-top: 2rem;
+    width: 100rem;
   }
 
   .atm1{
     width: 30rem;
-    margin-right: 3rem;
+    margin-left: 4rem;
   }
 
   /* 서비스 */
@@ -343,11 +334,7 @@
     height: 45rem;
     display: flex;
     margin-left: 17rem;
-    margin-top: 8rem;
-  }
-
-  .d1, .d3 img{
-    margin-left: 0;
+    margin-top: 4rem;
   }
 
   .card_d img{
@@ -357,35 +344,37 @@
   }
 
   .d1{
-    margin-right: 3.3rem;
     width: 30rem;
-    height: 42rem;
+    height: 40rem;
     overflow: hidden;
+    margin-left: 6rem;
   }
-  .d1 img{width: 30rem;}
+  .d1 img{width: 25rem;}
 
   .d2{
-    width: 29rem;
-    height: 42rem;
+    width: 22rem;
+    height: 37rem;
     overflow: hidden;
+    margin-left: -6rem;
+    margin-top: 3rem;
   }
   .d3{
-    width: 29rem;
-    height: 42rem;
+    width: 22rem;
+    height: 37rem;
     overflow: hidden;
+    margin-left: 3rem;
+    margin-top: 3rem;
   }
 
   .d2, .d3 img{padding-top: 15rem;}
-  .d1 img{padding-top: 4rem;}
+  .d1 img{padding-top: 8rem;}
 
-  .card_d img:hover{
-    transform:rotate(0deg);
-  }
+  .card_d img:hover{transform:rotate(0deg);}
 
-  .d1 img:hover{transform: translateY(-3.7rem);}
+  .d1 img:hover{transform: translateY(-3.5rem);}
 
-  .d2 img:hover{transform: translateY(-4.3rem);}
-  .d3 img:hover{transform: translateY(-4.3rem);}
+  .d2 img:hover{transform: translateY(-4.1rem);}
+  .d3 img:hover{transform: translateY(-4.1rem);}
 
   /* 신청하기 */
 
