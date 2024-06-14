@@ -90,7 +90,7 @@ header .hd{
   cursor: pointer;
   padding: 1.2rem;
   width: 10rem;
-  margin-left: 40%;
+  margin: 0 auto;
 }
 
 .sub_menu .menu1>li>span:hover{
