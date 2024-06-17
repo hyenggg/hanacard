@@ -29,7 +29,7 @@
     width: 100%;
   }
 
-  .img_wrap img{transform: scale(0.8);}
+  .img_wrap img{transform: scale(1.1);}
 
   /* 주요혜택 */
 
@@ -223,7 +223,7 @@
   .introduce{
     width: 120rem;
     height: 70rem;
-    padding: 10rem;
+    padding: 13rem;
     display: flex;
     font-size: 2.8em;
   }
@@ -231,6 +231,7 @@
   .in_txt{
     height: 20rem;
     margin-top: 13rem;
+    margin-left: 3rem;
   }
 
   .img_wrap{

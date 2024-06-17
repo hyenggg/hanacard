@@ -9,17 +9,4 @@ $(document).ready(function(){
   mobBtn.on("click",function () {
     BODY.toggleClass("mOpen");
   })
-
-  //(1)scroll-header
-  $(window).on("scroll", function(){
-    let scroll = $(this).scrollTop();
-    //console.log(scroll);
-    if (scroll > 60) {
-      BODY.addClass("scrolling");
-      scrollTopBtn.addClass('On');
-    }else{
-      BODY.removeClass("scrolling");
-      scrollTopBtn.removeClass('On');
-    }
-  });
 });
