@@ -2,6 +2,83 @@
 
 @media screen and (min-width:768px){
 
+  body{
+    padding-top: 8rem;
+  }
+  
+  header{
+    z-index: 20;
+    display: block;
+    position: fixed;
+    height: 8rem;
+    width: 100%;
+    top: 8rem;
+    left: 0;
+    padding: 2rem 3rem 0;
+    transition:.3s ease-in-out;
+    background-color: #fff;
+    margin-top: -8rem;
+  }
+  
+  header .hd{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header_tit a{
+    display: block;
+    position: relative;
+    width: 14rem;
+  }
+  
+  .mob_btn{
+    /* border: 1px solid #000; */
+    display: block;
+    width: 2.8rem;
+    height: 1.8rem;
+    position: relative;
+    margin-top: 0.8rem;
+  }
+  
+  .mob_btn span{
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    border-radius: 3rem;
+    background-color: #009476;
+    text-indent: -9999px;
+    position: absolute;
+    transition: 0.3s;
+    margin-left: 1rem;
+  }
+  .mob_btn span:nth-child(1){top: 0;}
+  .mob_btn span:nth-child(2){top: 50%;}
+  .mob_btn span:nth-child(3){top: 100%;}
+  
+  .subNav{
+    position: fixed;
+    top: 6.3rem;
+    width: 100%;
+    height: 100vh;
+    right: -110%;
+    /* right: 0; */
+    background-color: #008b8b;
+    color: #fff;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .subNav .inner{
+    background-color: #ffffff;
+    color: #000;
+    padding: 1rem;
+  }
+  
+  .sub_menu .sub_tit{display: none;}
+  .sub_menu .menu1>li{
+    padding: 1rem 0;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
   .sub_menu .menu1>li>span{
     display: block;
     position: relative;
@@ -9,9 +86,31 @@
     font-size: 1.9rem;
     font-weight: 600;
     cursor: pointer;
-    padding: 1.2rem;
     width: 10rem;
-    margin: 0 auto;
+    right: 0;
+  }
+  
+  .sub_menu .menu1>li>span:hover{
+    background-color: #CEECE5;
+    border-radius: 2rem;
+  }
+  
+  .sub_menu .menu1>li:nth-of-type(5){
+    border-style: none;
+  }
+  
+  .mOpen .subNav{right: 0;}
+  
+  .mOpen .mob_btn span:nth-child(1){
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  .mOpen .mob_btn span:nth-child(2){
+    opacity: 0;
+  }
+  .mOpen .mob_btn span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 50%;
   }
 
 
@@ -31,17 +130,53 @@
 
   .img_wrap img{transform: scale(1.1);}
 
+
+  /* main visual */
+
+.main{
+  width: 100%;
+  height: 85rem;
+  background-color: #F4F4F4;
+  margin-top: -8rem;
+}
+
+.visual_txt{
+  width: 33rem;
+  margin: 8rem auto;
+  padding-top: 2.2rem;
+}
+
+.visual_txt h2{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.visual{margin-top: -2rem;}
+
+.visual img{
+  width: 50rem;
+  margin: 0 auto;
+  margin-top: -1.5rem;
+  padding-left: 1.5rem;
+}
+
+.img_wrap img{
+  width: 40rem;
+}
+
   /* 주요혜택 */
 
   .card_1{
     width: 120rem;
-    height: 75rem;
-    padding: 9rem;
+    height: 65rem;
+    padding: 8rem;
     font-size: 2.8em;
   }
 
   .card_1 h2{
-    padding-left: 6rem;
+    padding-left: 2rem;
     font-size: 3.2rem;
   }
 
@@ -50,12 +185,16 @@
     justify-content: center;
     transform: translateX(0.5rem);
     margin-top: 2rem;
-    width: 100rem;
+    width: 70rem;
   }
 
   .atm1{
     width: 30rem;
     margin-right: 3rem;
+  }
+
+  .atm_txt p{
+    font-size: 2.2rem;
   }
 
 
@@ -66,7 +205,7 @@
   }
 
   .point h2{
-    padding-left: 6rem;
+    padding-left: 2rem;
     font-size: 3.2rem;
     margin-bottom: 6.5rem;
     margin-top: -1rem;
@@ -76,77 +215,80 @@
 
 
   /* 디자인 */
+  .card_d{display: none;}
+
   #design{
     background-color: #7A4BFF;
   }
 
   .design_all h2{
-    padding-left: 6rem;
+    padding-left: 2rem;
     font-size: 3.2rem;
   }
   .design_all p{
-    padding-left: 6rem;
+    padding-left: 2rem;
     font-size: 1.8rem;
-    margin-bottom: 6.5rem;
   }
 
   .design_all{
-    width: 120rem;
-    height: 85rem;
+    width: 80rem;
+    height: 75rem;
     padding: 9rem;
   }
 
-  .card_d{
+  .card_d2{
     height: 45rem;
     display: flex;
-    margin-left: 17rem;
-    margin-top: 8rem;
+    margin-top: -10rem;
   }
 
-  .d1, .d3 img{
-    margin-left: 0;
-  }
-
-  .card_d img{
+  .card_d2 img{
     width: 24rem;
     transform:rotate(0deg);
     transition: 0.4s;
   }
 
-  .d1{
-    margin-right: 3.3rem;
-    width: 30rem;
-    height: 42rem;
+  .d4{
+    width: 22rem;
+    height: 34rem;
     overflow: hidden;
+    margin-top: 6rem;
   }
-  .d1 img{width: 30rem;}
 
-  .d2{
-    width: 29rem;
-    height: 42rem;
+  .d4 img{width: 25rem;}
+
+  .d5{
+    width: 22rem;
+    height: 37rem;
     overflow: hidden;
+    margin-left: 4rem;
+    margin-top: 3rem;
   }
-  .d3{
-    width: 29rem;
-    height: 42rem;
+  .d6{
+    width: 22rem;
+    height: 37rem;
     overflow: hidden;
+    margin-left: 3rem;
+    margin-top: 3rem;
   }
 
-  .d2, .d3 img{padding-top: 15rem;}
-  .d1 img{padding-top: 4rem;}
+  .d5, .d6 img{padding-top: 15rem;}
+  .d4 img{padding-top: 8rem;}
 
-  .card_d img:hover{
-    transform:rotate(0deg);
-  }
+  .card_d2 img:hover{transform:rotate(0deg);}
 
-  .d1 img:hover{transform: translateY(-3.7rem);}
+  .d4 img:hover{transform: translateY(-3.5rem);}
 
-  .d2 img:hover{transform: translateY(-4.3rem);}
-  .d3 img:hover{transform: translateY(-4.3rem);}
+  .d5 img:hover{transform: translateY(-4.1rem);}
+  .d6 img:hover{transform: translateY(-4.1rem);}
 
   /* 신청하기 */
   .card_one{
     font-size: 2.9em;
+  }
+
+  .onecard{
+    transform: rotate(-90deg);
   }
 }
 
@@ -234,6 +376,8 @@
     margin-left: 3rem;
   }
 
+  .br1{display: none;}
+
   .img_wrap{
     margin-left: 5rem;
     width: 45rem;
@@ -318,6 +462,8 @@
   }
 
   /* 카드 디자인 */
+  .card_d{display: none;}
+
   #design{
     background-color: #7A4BFF;
   }
@@ -331,35 +477,37 @@
     padding: 9rem;
   }
 
-  .card_d{
+  .card_d2{
     height: 45rem;
     display: flex;
     margin-left: 17rem;
     margin-top: 4rem;
   }
 
-  .card_d img{
+  .card_d2 img{
     width: 24rem;
     transform:rotate(0deg);
     transition: 0.4s;
   }
 
-  .d1{
-    width: 30rem;
+  .d4{
+    width: 27rem;
     height: 40rem;
     overflow: hidden;
     margin-left: 6rem;
+    margin-right: 10rem;
+    margin-top: -0.1rem;
   }
-  .d1 img{width: 25rem;}
+  .d4 img{width: 27rem;}
 
-  .d2{
+  .d5{
     width: 22rem;
     height: 37rem;
     overflow: hidden;
     margin-left: -6rem;
     margin-top: 3rem;
   }
-  .d3{
+  .d6{
     width: 22rem;
     height: 37rem;
     overflow: hidden;
@@ -367,15 +515,15 @@
     margin-top: 3rem;
   }
 
-  .d2, .d3 img{padding-top: 15rem;}
-  .d1 img{padding-top: 8rem;}
+  .d5, .d6 img{padding-top: 15rem;}
+  .d4 img{padding-top: 8rem;}
 
-  .card_d img:hover{transform:rotate(0deg);}
+  .card_d2 img:hover{transform:rotate(0deg);}
 
-  .d1 img:hover{transform: translateY(-3.5rem);}
+  .d4 img:hover{transform: translateY(-3.5rem);}
 
-  .d2 img:hover{transform: translateY(-4.1rem);}
-  .d3 img:hover{transform: translateY(-4.1rem);}
+  .d5 img:hover{transform: translateY(-4.1rem);}
+  .d6 img:hover{transform: translateY(-4.1rem);}
 
   /* 신청하기 */
 
@@ -415,7 +563,7 @@
     margin-top: -6rem;
   }
 
-  .onecard img{transform:rotate(360deg);}
+  .onecard img{transform:rotate(-90deg);}
 
   /* 푸터 */
 

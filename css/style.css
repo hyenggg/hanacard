@@ -120,13 +120,13 @@ header .hd{
 
 .main{
   width: 100%;
-  height: 75rem;
+  height: 65rem;
   background-color: #F4F4F4;
   margin-top: -8rem;
 }
 
 .visual_txt{
-  width: 33rem;
+  width: 23rem;
   margin: 8rem auto;
   padding-top: 6rem;
 }
@@ -143,6 +143,7 @@ header .hd{
 .visual img{
   width: 85rem;
   margin: 0 auto;
+  margin-top: -1.5rem;
   padding-left: 1.5rem;
 }
 
@@ -339,7 +340,7 @@ header .hd{
 }
 
 /* 카드디자인 */
-
+.card_d2{display: none;}
 
 #design{
   margin-top: -3rem;
@@ -375,30 +376,31 @@ header .hd{
   font-weight: 500;
 }
 
-.card_d{overflow: hidden;}
+.card_d{
+  overflow: hidden;
+}
 
 .card_d img{
-  transform: translateX(2rem) rotate(-90deg);
+  transform: translateX(5rem) rotate(-90deg);
   transition: 0.4s;
 }
 
 .d1, .d2, .d3{opacity: 0;}
 
-.d2 img{
+.d1 img{
+  transform: translateX(-2rem) rotate(90deg);
+}
+
+.d2 img, .d3 img{
   transform: translateX(-2rem) rotate(90deg);
   margin-top: -5rem;
   padding-left: 1rem;
 }
 
-.d1, .d3 img{
-  margin-left: 18.7rem;
-}
-
 .d3 img{margin-top: -5rem;}
 
-.d1 img:hover{transform: translateX(0) rotate(-90deg);}
-.d3 img:hover{transform: translateX(0) rotate(-90deg);}
-
+.d1 img:hover{transform: translateX(0) rotate(90deg);}
+.d3 img:hover{transform: translateX(0) rotate(90deg);}
 .d2 img:hover{transform: translateX(0) rotate(90deg);}
 
 /* 신청하기 */
@@ -407,7 +409,7 @@ header .hd{
   padding: 3rem;
   padding-top: 6rem;
   opacity: 0;
-  height: 85rem;
+  height: 70rem;
 }
 
 .arrow2{
@@ -446,7 +448,7 @@ header .hd{
 }
 
 .onecard{
-  margin-top: 7rem;
+  margin-top: -0.5rem;
   height: 45rem;
   display: flex;
   justify-content: center;
