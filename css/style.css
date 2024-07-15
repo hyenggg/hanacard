@@ -8,6 +8,8 @@
   display: none;
 }
 
+html{scroll-behavior: smooth;}
+
 body{
 	padding-top: 8rem;
 }
