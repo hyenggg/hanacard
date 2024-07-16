@@ -255,7 +255,10 @@
     margin-top: 6rem;
   }
 
-  .d4 img{width: 25rem;}
+  .d4 img{
+    width: 25rem;
+    margin-top: 2rem;
+  }
 
   .d5{
     width: 22rem;
